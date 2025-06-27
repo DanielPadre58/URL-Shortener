@@ -21,7 +21,7 @@ public class UrlsController(IUrlRepo repository) : ControllerBase
     {
         var createdUrl = repository.AddUrl(url);
 
-        return CreatedAtRoute(nameof(RedirectTo), new { shortenedUrlId = createdUrl.ShortenedUrlId }, createdUrl);;
+        return CreatedAtAction(nameof(GetUrl), new { shortenedUrlId = createdUrl.ShortenedUrlId }, createdUrl);;
     }
 
     [Route("urls")]
