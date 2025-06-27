@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Encurtador de URL</title>
+</head>
+<body>
+    <main>
+        <h1>Encurtador de URL</h1>
+        <div class="inputs">
+            <label for="link_field"></label>
+            <input id="link_field" type="text" placeholder="insira o seu link">
+            <button onclick="CreateUrl()" id="shorten_button">Encurtar</button>
+        </div>
+        <div id="outputs">
+            <h3>O seu url encurtado</h3>
+            <p id="shortened_url_field"></p>
+        </div>
+    </main>
+    <script src="behaviour.js"></script>
+</body>
+</html>
